@@ -44,6 +44,8 @@ exports.respond = function(botRoom) {
     funMode:      sysCommands.fun_mode(),
     owner:        config.env().owner
   };
+  
+  var botID = process.env.BOT_ID;
 
   this.res.writeHead(200);
   this.res.end();
